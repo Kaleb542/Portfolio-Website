@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Kaleb Engelbrecht | Portfolio</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+  </head>
+  
+  <body>
+    <header id="navbar" class="navbar-fixed">
+      <nav>
+        <ul>
+          <li><a href="#welcome-section">Welcome</a></li>
+          <li><a href="#projects">Projects</a></li>
+          <li><a href="#about-me">About Me</a></li>
+          <li><a href="#contact-form">Contact</a></li>
+          <li><a id="profile-link" href="https://github.com/Kaleb542" target="_blank">GitHub</a></li>
+        </ul>
+      </nav>
+    </header>
+
+  <section id="welcome-section">
+    <div class="container">
+      <h1>Hi, I'm Kaleb. Welcome to My Portfolio!</h1>
+      <div class="profile-picture">
+        <img src="pro_pic.jpg" alt="Profile Picture">
+      </div>
+      <p class="subtitle">Pursuing Bachelor of Science in Computer Science</p>
+      <div class="contact-info">
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/kaleb-engelbrecht/" target="_blank">linkedin.com/in/kaleb-engelbrecht</a></p>
+        <p>Email: Kaleb54220@gmail.com</p>
+        <p>Phone: 920-323-0046</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="projects">
+    <div class="container">
+      <h2>Projects</h2>
+      <div id="project-tiles"></div>
+    </div>
+  </section>
+
+  <section id="about-me">
+    <div class="container">
+      <h2>About Me</h2>
+      <div class="about-description">
+        <p>As a senior pursuing a Bachelor of Science in Computer Science at the University of Wisconsin-Green Bay, I am highly motivated to secure an internship or research opportunity in the field. My primary goal is to gain valuable hands-on experience that will pave the way towards a successful full-time career. I possess strong problem-solving abilities and demonstrate meticulous attention to detail. I am dedicated to continuously enhancing my skill set and advancing my proficiency in order to excel in the computer science industry.</p>
+      </div>
+
+      <h3>Technical Skills</h3>
+      <div class="skills-container">
+        <div class="skills-group">
+          <h4>Programming Languages</h4>
+          <ul class="skills-list">
+            <li>C</li>
+            <li>Java</li>
+            <li>HTML, CSS, and JavaScript</li>
+          </ul>
+        </div>
+        <div class="skills-group">
+          <h4>Computer Science Fundamentals</h4>
+          <ul class="skills-list">
+            <li>Algorithms and Data Structures</li>
+            <li>Object-Oriented Programming</li>
+            <li>Information Security</li>
+          </ul>
+        </div>
+        <div class="skills-group">
+          <h4>Database and Data Management</h4>
+          <ul class="skills-list">
+            <li>SQL and NoSQL</li>
+            <li>MySQL Server</li>
+            <li>MongoDB</li>
+          </ul>
+        </div>
+        <div class="skills-group">
+          <h4>Operating Systems</h4>
+          <ul class="skills-list">
+            <li>Windows and Linux</li>
+          </ul>
+        </div>
+        <div class="skills-group">
+          <h4>Version Control and Collaboration</h4>
+          <ul class="skills-list">
+            <li>Git</li>
+          </ul>
+        </div>
+        <div class="skills-group">
+          <h4>Cloud Platforms</h4>
+          <ul class="skills-list">
+            <li>Amazon Web Services</li>
+            <li>Google Cloud Platform</li>
+          </ul>
+        </div>
+      </div>
+
+      <h3>Honors</h3>
+      <ul class="honors-list">
+        <li>Manitowoc Company Scholarship, Spring 2022-Present</li>
+        <li>Phi Theta Kappa International Honor Society, Fall 2021-Present</li>
+        <li>Dean’s List Semester High Honors, Fall 2021</li>
+        <li>Dean’s List Semester Honors, Spring 2022</li>
+        <li>Dean's List Semester Highest Honors, Fall 2022</li>
+      </ul>
+    </div>
+  </section>
+
+  <section id="contact-form">
+    <div class="container">
+      <h2>Contact Me</h2>
+      <form id="contact-form" action="submit_form.php" method="POST">
+        <div class="form-group">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" required>
+        </div>
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" required></textarea>
+        </div>
+        <button type="submit">Submit</button>
+      </form>
+    </div>
+  </section>
+
+  <footer id="footer">
+    <div class="container">
+      <div class="social-media">
+        <a href="https://www.linkedin.com/in/kaleb-engelbrecht/" target="_blank"><i class="fab fa-linkedin"></i></a>
+        <a href="https://github.com/Kaleb542" target="_blank"><i class="fab fa-github"></i></a>
+      </div>
+      <p>&copy; 2023 Kaleb Engelbrecht. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <button id="back-to-top" title="Go to top"><i class="fas fa-arrow-up"></i></button>
+
+  <script src="script.js"></script>
+
+  
+</body>
+
+</html>
