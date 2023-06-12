@@ -44,7 +44,7 @@
     color: #999;
   }
 
-  /* Add CSS to make navbar stay visible */
+  /* Make navbar stay visible */
 .navbar-fixed {
     position: fixed;
     top: 0;
@@ -52,7 +52,7 @@
     z-index: 999;
   }
   
-  /* Add CSS to highlight active link in navbar */
+  /* Highlight active link in navbar */
   .navbar-fixed ul li a.active {
     color: #999;
   }

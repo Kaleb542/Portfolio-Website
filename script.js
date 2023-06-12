@@ -16,7 +16,19 @@ fetch('https://api.github.com/users/Kaleb542/repos')
       projectDescription.textContent = project.description;
 
       const projectTechnologies = document.createElement('p');
-      projectTechnologies.textContent = `Technologies used: ${project.language}`;
+      if (project.language) {
+        const languages = project.language.split(",").map(lang => lang.trim());
+        projectTechnologies.textContent = 'Technologies used: ';
+        
+        languages.forEach((language, index) => {
+          if (index > 0) {
+            projectTechnologies.innerHTML += ', ';
+          }
+          projectTechnologies.innerHTML += `<span class="technology">${language}</span>`;
+        });
+      } else {
+        projectTechnologies.textContent = 'Technologies used: Not specified';
+      }
 
       const projectLink = document.createElement('a');
       projectLink.href = project.html_url;
